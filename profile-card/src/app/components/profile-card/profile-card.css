@@ -1,0 +1,171 @@
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 20px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 350px;
+  padding: 35px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6366f1;
+  margin-bottom: 20px;
+}
+
+.profile-card h1 {
+  font-size: 26px;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.profile-card h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6366f1;
+  margin-bottom: 20px;
+}
+
+.profile-card p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.social-links a {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  color: #4338ca;
+}
+
+.profile-card button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6366f1;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card button:hover {
+  background-color: #4338ca;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill {
+  padding: 8px 15px;
+  background-color: #e0e7ff;
+  color: #4338ca;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.follow-section {
+  margin-top: 25px;
+}
+
+.follow-section p {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.follow-section button {
+  padding: 10px 25px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.follow-section button:hover {
+  background-color: #3730a3;
+}
+
+.bio-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #64748b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bio-button:hover {
+  background-color: #475569;
+}
+
+.edit-section {
+  margin-top: 25px;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  background-color: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #115e59;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.edit-form label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.edit-form input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}

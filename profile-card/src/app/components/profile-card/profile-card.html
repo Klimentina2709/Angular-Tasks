@@ -1,0 +1,58 @@
+<div class="profile-container">
+  <div class="profile-card">
+    <img
+      src="https://i.pravatar.cc/150?img=12"
+      alt="Profile picture"
+      class="profile-image"
+    >
+
+    <h1>{{ name }}</h1>
+    <h2>{{ jobTitle }}</h2>
+    <p>{{ location }}</p>
+
+    @if (showBio) {
+      <p>{{ bio }}</p>
+    }
+
+    <button class="bio-button" (click)="showBio = !showBio">
+      {{ showBio ? 'Hide Biography' : 'Show Biography' }}
+    </button>
+
+    <h3>My Skills</h3>
+
+    <div class="skills">
+      @for (skill of skills; track skill) {
+        <span class="skill">{{ skill }}</span>
+      }
+    </div>
+
+    <div class="follow-section">
+      <p>Followers: {{ followers }}</p>
+
+      <button (click)="toggleFollow()">
+        {{ isFollowing ? 'Following' : 'Follow' }}
+      </button>
+    </div>
+
+    <div class="edit-section">
+      <button class="edit-button" (click)="editMode = !editMode">
+        {{ editMode ? 'Close Editor' : 'Edit Profile' }}
+      </button>
+
+      @if (editMode) {
+        <div class="edit-form">
+          <h3>Edit Your Profile</h3>
+
+          <label>Name</label>
+          <input type="text" [(ngModel)]="name">
+
+          <label>Job Title</label>
+          <input type="text" [(ngModel)]="jobTitle">
+
+          <label>Location</label>
+          <input type="text" [(ngModel)]="location">
+        </div>
+      }
+    </div>
+  </div>
+</div>
