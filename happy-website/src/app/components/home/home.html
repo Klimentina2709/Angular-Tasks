@@ -1,0 +1,33 @@
+
+
+<section class="home" id="home">
+
+  <h1>Welcome to Happy Website!</h1>
+
+  <p>
+    We are here to make your day a little brighter.
+  </p>
+
+  <button (click)="openPopup()">Learn More</button>
+
+  @if (showPopup) {
+    <div class="popup-overlay">
+
+      <div class="popup">
+
+        <h2>Welcome to Happy Website!</h2>
+
+        <p>
+          We believe that happiness starts with small things.
+          Thank you for visiting our website!
+        </p>
+
+        <button (click)="closePopup()">Close</button>
+
+      </div>
+
+    </div>
+  }
+
+</section>
+

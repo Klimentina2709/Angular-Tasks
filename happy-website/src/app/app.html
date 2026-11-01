@@ -1,0 +1,19 @@
+
+<div [class.dark-mode]="isDarkMode">
+
+  <app-header
+    [darkMode]="isDarkMode"
+    (darkModeChange)="toggleDarkMode()">
+  </app-header>
+
+  <app-home></app-home>
+
+  <app-about></app-about>
+
+  <app-team></app-team>
+
+  <app-footer></app-footer>
+
+</div>
+
+<router-outlet />

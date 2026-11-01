@@ -1,0 +1,33 @@
+
+<section class="team" id="team">
+
+  <h2>Meet Our Team</h2>
+
+  <p class="team-description">
+    The people who make Happy Website possible.
+  </p>
+
+  <div class="team-container">
+
+    @for (member of members; track member.name) {
+
+      <div class="team-card">
+
+        <div class="avatar">
+          {{ member.name.charAt(0) }}
+        </div>
+
+        <h3>{{ member.name }}</h3>
+
+        <h4>{{ member.role }}</h4>
+
+        <p>{{ member.description }}</p>
+
+      </div>
+
+    }
+
+  </div>
+
+</section>
+
